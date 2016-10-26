@@ -49,3 +49,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'wicked', '~> 1.3'
 gem 'devise', '~> 4.2'
 gem 'twitter-bootstrap-rails', '~> 3.2'
+gem 'font-awesome-rails'
+
+gem 'simple_form'
