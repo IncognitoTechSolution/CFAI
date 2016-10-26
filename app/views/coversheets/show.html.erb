@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @coversheet.report_id %>
+</p>
+
+<p>
+  <strong>Treasurer:</strong>
+  <%= @coversheet.treasurer_id %>
+</p>
+
+<p>
+  <strong>Periodbegin:</strong>
+  <%= @coversheet.periodbegin %>
+</p>
+
+<p>
+  <strong>Periodend:</strong>
+  <%= @coversheet.periodend %>
+</p>
+
+<p>
+  <strong>Electiondate:</strong>
+  <%= @coversheet.electiondate %>
+</p>
+
+<p>
+  <strong>Election type:</strong>
+  <%= @coversheet.election_type_id %>
+</p>
+
+<p>
+  <strong>Office held:</strong>
+  <%= @coversheet.office_held_id %>
+</p>
+
+<p>
+  <strong>Office sought:</strong>
+  <%= @coversheet.office_sought_id %>
+</p>
+
+<%= link_to 'Edit', edit_coversheet_path(@coversheet) %> |
+<%= link_to 'Back', coversheets_path %>

@@ -1,0 +1,1 @@
+json.partial! "office_helds/office_held", office_held: @office_held

@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entity_type_id: 1
+  prefix_id: 1
+  firstname: MyString
+  mi: MyString
+  lastname: MyString
+  suffix: MyString
+  address: MyString
+  addresstwo: MyString
+  suite: MyString
+  state_id: 1
+  city: MyString
+  zipcode: MyString
+  occupation: MyString
+  comporg: MyString
+  addresschange: false
+
+two:
+  entity_type_id: 1
+  prefix_id: 1
+  firstname: MyString
+  mi: MyString
+  lastname: MyString
+  suffix: MyString
+  address: MyString
+  addresstwo: MyString
+  suite: MyString
+  state_id: 1
+  city: MyString
+  zipcode: MyString
+  occupation: MyString
+  comporg: MyString
+  addresschange: false

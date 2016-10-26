@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @investment_purchase.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @investment_purchase.entity_id %>
+</p>
+
+<p>
+  <strong>Expend type:</strong>
+  <%= @investment_purchase.expend_type_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @investment_purchase.transaction_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @investment_purchase.candidate_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @investment_purchase.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @investment_purchase.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @investment_purchase.description %>
+</p>
+
+<p>
+  <strong>Iptotal:</strong>
+  <%= @investment_purchase.iptotal %>
+</p>
+
+<%= link_to 'Edit', edit_investment_purchase_path(@investment_purchase) %> |
+<%= link_to 'Back', investment_purchases_path %>

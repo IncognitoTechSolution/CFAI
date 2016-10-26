@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Prefixes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prefix</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prefixes.each do |prefix| %>
+      <tr>
+        <td><%= prefix.prefix %></td>
+        <td><%= link_to 'Show', prefix %></td>
+        <td><%= link_to 'Edit', edit_prefix_path(prefix) %></td>
+        <td><%= link_to 'Destroy', prefix, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prefix', new_prefix_path %>

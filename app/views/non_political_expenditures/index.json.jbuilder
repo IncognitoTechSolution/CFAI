@@ -1,0 +1,1 @@
+json.array! @non_political_expenditures, partial: 'non_political_expenditures/non_political_expenditure', as: :non_political_expenditure

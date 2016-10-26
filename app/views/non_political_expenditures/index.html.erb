@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Non Political Expenditures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Entity</th>
+      <th>Expenditure category</th>
+      <th>Transaction</th>
+      <th>Date</th>
+      <th>Purpose</th>
+      <th>Amount</th>
+      <th>Npetotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @non_political_expenditures.each do |non_political_expenditure| %>
+      <tr>
+        <td><%= non_political_expenditure.report_id %></td>
+        <td><%= non_political_expenditure.entity_id %></td>
+        <td><%= non_political_expenditure.expenditure_category_id %></td>
+        <td><%= non_political_expenditure.transaction_id %></td>
+        <td><%= non_political_expenditure.date %></td>
+        <td><%= non_political_expenditure.purpose %></td>
+        <td><%= non_political_expenditure.amount %></td>
+        <td><%= non_political_expenditure.npetotal %></td>
+        <td><%= link_to 'Show', non_political_expenditure %></td>
+        <td><%= link_to 'Edit', edit_non_political_expenditure_path(non_political_expenditure) %></td>
+        <td><%= link_to 'Destroy', non_political_expenditure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Non political expenditure', new_non_political_expenditure_path %>

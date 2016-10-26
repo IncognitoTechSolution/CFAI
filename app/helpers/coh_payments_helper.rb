@@ -1,0 +1,2 @@
+module CohPaymentsHelper
+end

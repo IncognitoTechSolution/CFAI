@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: 1
+  coh_payment_id: 1
+  credit_id: 1
+  expenditure_category_id: 1
+  expenditure_id: 1
+  investment_purchase_id: 1
+  loan_id: 1
+  monetary_contribution_id: 1
+  non_monetary_contribution_id: 1
+  non_political_expenditure_id: 1
+  pledge_id: 1
+  unpaid_incurred_obligation_id: 1
+
+two:
+  report_id: 1
+  coh_payment_id: 1
+  credit_id: 1
+  expenditure_category_id: 1
+  expenditure_id: 1
+  investment_purchase_id: 1
+  loan_id: 1
+  monetary_contribution_id: 1
+  non_monetary_contribution_id: 1
+  non_political_expenditure_id: 1
+  pledge_id: 1
+  unpaid_incurred_obligation_id: 1

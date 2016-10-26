@@ -1,0 +1,2 @@
+module MonetaryContributionsHelper
+end

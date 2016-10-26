@@ -1,0 +1,65 @@
+<%= form_for(@report_subtotal) do |f| %>
+  <% if @report_subtotal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report_subtotal.errors.count, "error") %> prohibited this report_subtotal from being saved:</h2>
+
+      <ul>
+      <% @report_subtotal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :coh_payment_id %><br>
+    <%= f.number_field :coh_payment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_id %><br>
+    <%= f.number_field :credit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expenditure_category_id %><br>
+    <%= f.number_field :expenditure_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expenditure_id %><br>
+    <%= f.number_field :expenditure_id %>
+  </div>
+  <div class="field">
+    <%= f.label :investment_purchase_id %><br>
+    <%= f.number_field :investment_purchase_id %>
+  </div>
+  <div class="field">
+    <%= f.label :loan_id %><br>
+    <%= f.number_field :loan_id %>
+  </div>
+  <div class="field">
+    <%= f.label :monetary_contribution_id %><br>
+    <%= f.number_field :monetary_contribution_id %>
+  </div>
+  <div class="field">
+    <%= f.label :non_monetary_contribution_id %><br>
+    <%= f.number_field :non_monetary_contribution_id %>
+  </div>
+  <div class="field">
+    <%= f.label :non_political_expenditure_id %><br>
+    <%= f.number_field :non_political_expenditure_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pledge_id %><br>
+    <%= f.number_field :pledge_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unpaid_incurred_obligation_id %><br>
+    <%= f.number_field :unpaid_incurred_obligation_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.array! @office_helds, partial: 'office_helds/office_held', as: :office_held

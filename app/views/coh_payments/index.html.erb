@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Coh Payments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Entity</th>
+      <th>Expenditure category</th>
+      <th>Candidate</th>
+      <th>Travel</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Cptotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coh_payments.each do |coh_payment| %>
+      <tr>
+        <td><%= coh_payment.report_id %></td>
+        <td><%= coh_payment.entity_id %></td>
+        <td><%= coh_payment.expenditure_category_id %></td>
+        <td><%= coh_payment.candidate_id %></td>
+        <td><%= coh_payment.travel_id %></td>
+        <td><%= coh_payment.date %></td>
+        <td><%= coh_payment.amount %></td>
+        <td><%= coh_payment.description %></td>
+        <td><%= coh_payment.cptotal %></td>
+        <td><%= link_to 'Show', coh_payment %></td>
+        <td><%= link_to 'Edit', edit_coh_payment_path(coh_payment) %></td>
+        <td><%= link_to 'Destroy', coh_payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coh payment', new_coh_payment_path %>

@@ -1,0 +1,1 @@
+json.array! @investment_purchases, partial: 'investment_purchases/investment_purchase', as: :investment_purchase

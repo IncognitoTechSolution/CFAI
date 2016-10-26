@@ -1,0 +1,49 @@
+<%= form_for(@coversheet) do |f| %>
+  <% if @coversheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coversheet.errors.count, "error") %> prohibited this coversheet from being saved:</h2>
+
+      <ul>
+      <% @coversheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :treasurer_id %><br>
+    <%= f.number_field :treasurer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :periodbegin %><br>
+    <%= f.text_field :periodbegin %>
+  </div>
+  <div class="field">
+    <%= f.label :periodend %><br>
+    <%= f.text_field :periodend %>
+  </div>
+  <div class="field">
+    <%= f.label :electiondate %><br>
+    <%= f.text_field :electiondate %>
+  </div>
+  <div class="field">
+    <%= f.label :election_type_id %><br>
+    <%= f.number_field :election_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :office_held_id %><br>
+    <%= f.number_field :office_held_id %>
+  </div>
+  <div class="field">
+    <%= f.label :office_sought_id %><br>
+    <%= f.number_field :office_sought_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

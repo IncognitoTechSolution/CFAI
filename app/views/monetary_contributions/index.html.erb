@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monetary Contributions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Entity type</th>
+      <th>Candidate</th>
+      <th>Outofstatepac</th>
+      <th>Pacid</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Mctotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monetary_contributions.each do |monetary_contribution| %>
+      <tr>
+        <td><%= monetary_contribution.report_id %></td>
+        <td><%= monetary_contribution.transaction_id %></td>
+        <td><%= monetary_contribution.entity_id %></td>
+        <td><%= monetary_contribution.entity_type_id %></td>
+        <td><%= monetary_contribution.candidate_id %></td>
+        <td><%= monetary_contribution.outofstatepac %></td>
+        <td><%= monetary_contribution.pacid %></td>
+        <td><%= monetary_contribution.date %></td>
+        <td><%= monetary_contribution.amount %></td>
+        <td><%= monetary_contribution.description %></td>
+        <td><%= monetary_contribution.mctotal %></td>
+        <td><%= link_to 'Show', monetary_contribution %></td>
+        <td><%= link_to 'Edit', edit_monetary_contribution_path(monetary_contribution) %></td>
+        <td><%= link_to 'Destroy', monetary_contribution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monetary contribution', new_monetary_contribution_path %>

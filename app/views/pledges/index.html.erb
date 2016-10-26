@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pledges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Date</th>
+      <th>Outofstatepac</th>
+      <th>Pacid</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pledges.each do |pledge| %>
+      <tr>
+        <td><%= pledge.report_id %></td>
+        <td><%= pledge.transaction_id %></td>
+        <td><%= pledge.entity_id %></td>
+        <td><%= pledge.date %></td>
+        <td><%= pledge.outofstatepac %></td>
+        <td><%= pledge.pacid %></td>
+        <td><%= pledge.amount %></td>
+        <td><%= pledge.description %></td>
+        <td><%= link_to 'Show', pledge %></td>
+        <td><%= link_to 'Edit', edit_pledge_path(pledge) %></td>
+        <td><%= link_to 'Destroy', pledge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pledge', new_pledge_path %>

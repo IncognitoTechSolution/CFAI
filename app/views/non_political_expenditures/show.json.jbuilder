@@ -1,0 +1,1 @@
+json.partial! "non_political_expenditures/non_political_expenditure", non_political_expenditure: @non_political_expenditure

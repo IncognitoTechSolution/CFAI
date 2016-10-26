@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: 1
+  entity_id: 1
+  expenditure_category_id: 1
+  transaction_id: 1
+  date: 2016-10-25
+  purpose: MyText
+  amount: 1.5
+  npetotal: 1.5
+
+two:
+  report_id: 1
+  entity_id: 1
+  expenditure_category_id: 1
+  transaction_id: 1
+  date: 2016-10-25
+  purpose: MyText
+  amount: 1.5
+  npetotal: 1.5

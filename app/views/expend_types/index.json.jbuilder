@@ -1,0 +1,1 @@
+json.array! @expend_types, partial: 'expend_types/expend_type', as: :expend_type

@@ -1,0 +1,1 @@
+json.array! @report_subtotals, partial: 'report_subtotals/report_subtotal', as: :report_subtotal

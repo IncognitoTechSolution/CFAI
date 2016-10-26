@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Treasurers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address type</th>
+      <th>Prefix</th>
+      <th>Firstname</th>
+      <th>Mi</th>
+      <th>Lastname</th>
+      <th>Alias</th>
+      <th>Suffix</th>
+      <th>Addresschange</th>
+      <th>Address</th>
+      <th>Suite</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Phone</th>
+      <th>Ext</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @treasurers.each do |treasurer| %>
+      <tr>
+        <td><%= treasurer.address_type_id %></td>
+        <td><%= treasurer.prefix_id %></td>
+        <td><%= treasurer.firstname %></td>
+        <td><%= treasurer.mi %></td>
+        <td><%= treasurer.lastname %></td>
+        <td><%= treasurer.alias %></td>
+        <td><%= treasurer.suffix %></td>
+        <td><%= treasurer.addresschange %></td>
+        <td><%= treasurer.address %></td>
+        <td><%= treasurer.suite %></td>
+        <td><%= treasurer.city %></td>
+        <td><%= treasurer.state_id %></td>
+        <td><%= treasurer.zipcode %></td>
+        <td><%= treasurer.phone %></td>
+        <td><%= treasurer.ext %></td>
+        <td><%= link_to 'Show', treasurer %></td>
+        <td><%= link_to 'Edit', edit_treasurer_path(treasurer) %></td>
+        <td><%= link_to 'Destroy', treasurer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Treasurer', new_treasurer_path %>

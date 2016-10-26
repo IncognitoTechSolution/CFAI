@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Filer Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @filer_types.each do |filer_type| %>
+      <tr>
+        <td><%= filer_type.type %></td>
+        <td><%= link_to 'Show', filer_type %></td>
+        <td><%= link_to 'Edit', edit_filer_type_path(filer_type) %></td>
+        <td><%= link_to 'Destroy', filer_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Filer type', new_filer_type_path %>

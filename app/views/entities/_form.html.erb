@@ -1,0 +1,77 @@
+<%= form_for(@entity) do |f| %>
+  <% if @entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+      <% @entity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entity_type_id %><br>
+    <%= f.number_field :entity_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :prefix_id %><br>
+    <%= f.number_field :prefix_id %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :mi %><br>
+    <%= f.text_field :mi %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :suffix %><br>
+    <%= f.text_field :suffix %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :addresstwo %><br>
+    <%= f.text_field :addresstwo %>
+  </div>
+  <div class="field">
+    <%= f.label :suite %><br>
+    <%= f.text_field :suite %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br>
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation %><br>
+    <%= f.text_field :occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :comporg %><br>
+    <%= f.text_field :comporg %>
+  </div>
+  <div class="field">
+    <%= f.label :addresschange %><br>
+    <%= f.check_box :addresschange %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

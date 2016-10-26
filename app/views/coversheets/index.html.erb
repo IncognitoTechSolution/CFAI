@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Coversheets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Treasurer</th>
+      <th>Periodbegin</th>
+      <th>Periodend</th>
+      <th>Electiondate</th>
+      <th>Election type</th>
+      <th>Office held</th>
+      <th>Office sought</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coversheets.each do |coversheet| %>
+      <tr>
+        <td><%= coversheet.report_id %></td>
+        <td><%= coversheet.treasurer_id %></td>
+        <td><%= coversheet.periodbegin %></td>
+        <td><%= coversheet.periodend %></td>
+        <td><%= coversheet.electiondate %></td>
+        <td><%= coversheet.election_type_id %></td>
+        <td><%= coversheet.office_held_id %></td>
+        <td><%= coversheet.office_sought_id %></td>
+        <td><%= link_to 'Show', coversheet %></td>
+        <td><%= link_to 'Edit', edit_coversheet_path(coversheet) %></td>
+        <td><%= link_to 'Destroy', coversheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coversheet', new_coversheet_path %>

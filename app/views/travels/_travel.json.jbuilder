@@ -1,0 +1,2 @@
+json.extract! travel, :id, :report_id, :entity_id, :candidate_id, :travel_schedule_id, :purpose, :travelbegin, :travelend, :transportation, :departureloc, :destinationloc, :created_at, :updated_at
+json.url travel_url(travel, format: :json)

@@ -1,0 +1,1 @@
+json.array! @monetary_contributions, partial: 'monetary_contributions/monetary_contribution', as: :monetary_contribution

@@ -1,0 +1,1 @@
+json.array! @coh_payments, partial: 'coh_payments/coh_payment', as: :coh_payment

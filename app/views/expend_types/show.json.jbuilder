@@ -1,0 +1,1 @@
+json.partial! "expend_types/expend_type", expend_type: @expend_type

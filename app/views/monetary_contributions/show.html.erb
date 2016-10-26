@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @monetary_contribution.report_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @monetary_contribution.transaction_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @monetary_contribution.entity_id %>
+</p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @monetary_contribution.entity_type_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @monetary_contribution.candidate_id %>
+</p>
+
+<p>
+  <strong>Outofstatepac:</strong>
+  <%= @monetary_contribution.outofstatepac %>
+</p>
+
+<p>
+  <strong>Pacid:</strong>
+  <%= @monetary_contribution.pacid %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @monetary_contribution.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @monetary_contribution.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @monetary_contribution.description %>
+</p>
+
+<p>
+  <strong>Mctotal:</strong>
+  <%= @monetary_contribution.mctotal %>
+</p>
+
+<%= link_to 'Edit', edit_monetary_contribution_path(@monetary_contribution) %> |
+<%= link_to 'Back', monetary_contributions_path %>

@@ -1,0 +1,89 @@
+<%= form_for(@filer) do |f| %>
+  <% if @filer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@filer.errors.count, "error") %> prohibited this filer from being saved:</h2>
+
+      <ul>
+      <% @filer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :filer_type_id %><br>
+    <%= f.number_field :filer_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br>
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :mi %><br>
+    <%= f.text_field :mi %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :committee %><br>
+    <%= f.text_field :committee %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :addresstwo %><br>
+    <%= f.text_field :addresstwo %>
+  </div>
+  <div class="field">
+    <%= f.label :suite %><br>
+    <%= f.text_field :suite %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :ext %><br>
+    <%= f.text_field :ext %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :releasepasswordto %><br>
+    <%= f.text_field :releasepasswordto %>
+  </div>
+  <div class="field">
+    <%= f.label :emailreleasepassword %><br>
+    <%= f.text_field :emailreleasepassword %>
+  </div>
+  <div class="field">
+    <%= f.label :receivedate %><br>
+    <%= f.date_select :receivedate %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

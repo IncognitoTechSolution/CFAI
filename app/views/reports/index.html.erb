@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report type</th>
+      <th>Submitdate</th>
+      <th>Filer</th>
+      <th>Filename</th>
+      <th>Origin</th>
+      <th>Campaignyear</th>
+      <th>Ontime</th>
+      <th>Signature</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reports.each do |report| %>
+      <tr>
+        <td><%= report.report_type_id %></td>
+        <td><%= report.submitdate %></td>
+        <td><%= report.filer_id %></td>
+        <td><%= report.filename %></td>
+        <td><%= report.origin %></td>
+        <td><%= report.campaignyear %></td>
+        <td><%= report.ontime %></td>
+        <td><%= report.signature %></td>
+        <td><%= link_to 'Show', report %></td>
+        <td><%= link_to 'Edit', edit_report_path(report) %></td>
+        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Report', new_report_path %>

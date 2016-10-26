@@ -1,0 +1,1 @@
+json.partial! "coversheets/coversheet", coversheet: @coversheet

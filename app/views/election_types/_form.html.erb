@@ -1,0 +1,21 @@
+<%= form_for(@election_type) do |f| %>
+  <% if @election_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@election_type.errors.count, "error") %> prohibited this election_type from being saved:</h2>
+
+      <ul>
+      <% @election_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

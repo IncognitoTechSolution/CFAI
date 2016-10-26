@@ -1,0 +1,1 @@
+json.array! @expenditure_categories, partial: 'expenditure_categories/expenditure_category', as: :expenditure_category

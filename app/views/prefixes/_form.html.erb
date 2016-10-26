@@ -1,0 +1,21 @@
+<%= form_for(@prefix) do |f| %>
+  <% if @prefix.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prefix.errors.count, "error") %> prohibited this prefix from being saved:</h2>
+
+      <ul>
+      <% @prefix.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :prefix %><br>
+    <%= f.text_field :prefix %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

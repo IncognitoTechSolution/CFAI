@@ -1,0 +1,1 @@
+json.array! @unpaid_incurred_obligations, partial: 'unpaid_incurred_obligations/unpaid_incurred_obligation', as: :unpaid_incurred_obligation

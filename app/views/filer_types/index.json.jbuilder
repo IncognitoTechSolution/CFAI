@@ -1,0 +1,1 @@
+json.array! @filer_types, partial: 'filer_types/filer_type', as: :filer_type

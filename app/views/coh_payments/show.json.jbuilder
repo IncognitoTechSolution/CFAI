@@ -1,0 +1,1 @@
+json.partial! "coh_payments/coh_payment", coh_payment: @coh_payment

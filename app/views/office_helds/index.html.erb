@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Office Helds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @office_helds.each do |office_held| %>
+      <tr>
+        <td><%= office_held.category %></td>
+        <td><%= link_to 'Show', office_held %></td>
+        <td><%= link_to 'Edit', edit_office_held_path(office_held) %></td>
+        <td><%= link_to 'Destroy', office_held, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Office held', new_office_held_path %>

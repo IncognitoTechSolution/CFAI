@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Report Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @report_types.each do |report_type| %>
+      <tr>
+        <td><%= report_type.type %></td>
+        <td><%= link_to 'Show', report_type %></td>
+        <td><%= link_to 'Edit', edit_report_type_path(report_type) %></td>
+        <td><%= link_to 'Destroy', report_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Report type', new_report_type_path %>

@@ -1,0 +1,1 @@
+json.array! @coversheets, partial: 'coversheets/coversheet', as: :coversheet

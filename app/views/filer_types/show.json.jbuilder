@@ -1,0 +1,1 @@
+json.partial! "filer_types/filer_type", filer_type: @filer_type

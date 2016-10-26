@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @loan.report_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @loan.transaction_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @loan.entity_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @loan.candidate_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @loan.date %>
+</p>
+
+<p>
+  <strong>Outofstatepac:</strong>
+  <%= @loan.outofstatepac %>
+</p>
+
+<p>
+  <strong>Pacid:</strong>
+  <%= @loan.pacid %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @loan.amount %>
+</p>
+
+<p>
+  <strong>Interestrate:</strong>
+  <%= @loan.interestrate %>
+</p>
+
+<p>
+  <strong>Maturitydate:</strong>
+  <%= @loan.maturitydate %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @loan.description %>
+</p>
+
+<p>
+  <strong>Personalfund:</strong>
+  <%= @loan.personalfund %>
+</p>
+
+<p>
+  <strong>Amountguaranteed:</strong>
+  <%= @loan.amountguaranteed %>
+</p>
+
+<p>
+  <strong>Loantotal:</strong>
+  <%= @loan.loantotal %>
+</p>
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

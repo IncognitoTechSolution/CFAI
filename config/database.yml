@@ -1,0 +1,7 @@
+development:
+ adapter: sqlserver
+ dsn: ruby
+ mode: odbc
+ database: CFAI
+ username: aimtiaz
+ password:

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prefix:</strong>
+  <%= @candidate.prefix_id %>
+</p>
+
+<p>
+  <strong>Office held:</strong>
+  <%= @candidate.office_held_id %>
+</p>
+
+<p>
+  <strong>Office sought:</strong>
+  <%= @candidate.office_sought_id %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @candidate.firstname %>
+</p>
+
+<p>
+  <strong>Mi:</strong>
+  <%= @candidate.mi %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @candidate.lastname %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @candidate.alias %>
+</p>
+
+<p>
+  <strong>Suffix:</strong>
+  <%= @candidate.suffix %>
+</p>
+
+<p>
+  <strong>Addresschange:</strong>
+  <%= @candidate.addresschange %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @candidate.address %>
+</p>
+
+<p>
+  <strong>Apptsuitenum:</strong>
+  <%= @candidate.apptsuitenum %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @candidate.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @candidate.state_id %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @candidate.zipcode %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @candidate.phone %>
+</p>
+
+<p>
+  <strong>Ext:</strong>
+  <%= @candidate.ext %>
+</p>
+
+<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+<%= link_to 'Back', candidates_path %>

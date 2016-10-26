@@ -1,0 +1,2 @@
+json.extract! investment_purchase, :id, :report_id, :entity_id, :expend_type_id, :transaction_id, :candidate_id, :date, :amount, :description, :iptotal, :created_at, :updated_at
+json.url investment_purchase_url(investment_purchase, format: :json)

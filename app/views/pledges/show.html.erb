@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @pledge.report_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @pledge.transaction_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @pledge.entity_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @pledge.date %>
+</p>
+
+<p>
+  <strong>Outofstatepac:</strong>
+  <%= @pledge.outofstatepac %>
+</p>
+
+<p>
+  <strong>Pacid:</strong>
+  <%= @pledge.pacid %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @pledge.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pledge.description %>
+</p>
+
+<%= link_to 'Edit', edit_pledge_path(@pledge) %> |
+<%= link_to 'Back', pledges_path %>

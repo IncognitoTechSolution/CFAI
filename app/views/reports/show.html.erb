@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report type:</strong>
+  <%= @report.report_type_id %>
+</p>
+
+<p>
+  <strong>Submitdate:</strong>
+  <%= @report.submitdate %>
+</p>
+
+<p>
+  <strong>Filer:</strong>
+  <%= @report.filer_id %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @report.filename %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @report.origin %>
+</p>
+
+<p>
+  <strong>Campaignyear:</strong>
+  <%= @report.campaignyear %>
+</p>
+
+<p>
+  <strong>Ontime:</strong>
+  <%= @report.ontime %>
+</p>
+
+<p>
+  <strong>Signature:</strong>
+  <%= @report.signature %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@traveler) do |f| %>
+  <% if @traveler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@traveler.errors.count, "error") %> prohibited this traveler from being saved:</h2>
+
+      <ul>
+      <% @traveler.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trvael_id %><br>
+    <%= f.number_field :trvael_id %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

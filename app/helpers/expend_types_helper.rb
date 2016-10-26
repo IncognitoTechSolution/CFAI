@@ -1,0 +1,2 @@
+module ExpendTypesHelper
+end

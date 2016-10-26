@@ -1,0 +1,61 @@
+<%= form_for(@unpaid_incurred_obligation) do |f| %>
+  <% if @unpaid_incurred_obligation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unpaid_incurred_obligation.errors.count, "error") %> prohibited this unpaid_incurred_obligation from being saved:</h2>
+
+      <ul>
+      <% @unpaid_incurred_obligation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_id %><br>
+    <%= f.number_field :entity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_id %><br>
+    <%= f.number_field :transaction_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expenditure_category_id %><br>
+    <%= f.number_field :expenditure_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :candidate_id %><br>
+    <%= f.number_field :candidate_id %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_id %><br>
+    <%= f.number_field :travel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expend_type_id %><br>
+    <%= f.number_field :expend_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :uitotal %><br>
+    <%= f.text_field :uitotal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

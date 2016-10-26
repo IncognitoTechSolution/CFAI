@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Loans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Candidate</th>
+      <th>Date</th>
+      <th>Outofstatepac</th>
+      <th>Pacid</th>
+      <th>Amount</th>
+      <th>Interestrate</th>
+      <th>Maturitydate</th>
+      <th>Description</th>
+      <th>Personalfund</th>
+      <th>Amountguaranteed</th>
+      <th>Loantotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loans.each do |loan| %>
+      <tr>
+        <td><%= loan.report_id %></td>
+        <td><%= loan.transaction_id %></td>
+        <td><%= loan.entity_id %></td>
+        <td><%= loan.candidate_id %></td>
+        <td><%= loan.date %></td>
+        <td><%= loan.outofstatepac %></td>
+        <td><%= loan.pacid %></td>
+        <td><%= loan.amount %></td>
+        <td><%= loan.interestrate %></td>
+        <td><%= loan.maturitydate %></td>
+        <td><%= loan.description %></td>
+        <td><%= loan.personalfund %></td>
+        <td><%= loan.amountguaranteed %></td>
+        <td><%= loan.loantotal %></td>
+        <td><%= link_to 'Show', loan %></td>
+        <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
+        <td><%= link_to 'Destroy', loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loan', new_loan_path %>

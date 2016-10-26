@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: 1
+  treasurer_id: 1
+  periodbegin: MyString
+  periodend: MyString
+  electiondate: MyString
+  election_type_id: 1
+  office_held_id: 1
+  office_sought_id: 1
+
+two:
+  report_id: 1
+  treasurer_id: 1
+  periodbegin: MyString
+  periodend: MyString
+  electiondate: MyString
+  election_type_id: 1
+  office_held_id: 1
+  office_sought_id: 1

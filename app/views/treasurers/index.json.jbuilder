@@ -1,0 +1,1 @@
+json.array! @treasurers, partial: 'treasurers/treasurer', as: :treasurer

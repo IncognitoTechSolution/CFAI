@@ -1,0 +1,1 @@
+json.partial! "monetary_contributions/monetary_contribution", monetary_contribution: @monetary_contribution

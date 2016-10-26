@@ -1,0 +1,1 @@
+json.partial! "unpaid_incurred_obligations/unpaid_incurred_obligation", unpaid_incurred_obligation: @unpaid_incurred_obligation

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @non_political_expenditure.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @non_political_expenditure.entity_id %>
+</p>
+
+<p>
+  <strong>Expenditure category:</strong>
+  <%= @non_political_expenditure.expenditure_category_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @non_political_expenditure.transaction_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @non_political_expenditure.date %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @non_political_expenditure.purpose %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @non_political_expenditure.amount %>
+</p>
+
+<p>
+  <strong>Npetotal:</strong>
+  <%= @non_political_expenditure.npetotal %>
+</p>
+
+<%= link_to 'Edit', edit_non_political_expenditure_path(@non_political_expenditure) %> |
+<%= link_to 'Back', non_political_expenditures_path %>

@@ -1,0 +1,2 @@
+json.extract! coh_payment, :id, :report_id, :entity_id, :expenditure_category_id, :candidate_id, :travel_id, :date, :amount, :description, :cptotal, :created_at, :updated_at
+json.url coh_payment_url(coh_payment, format: :json)

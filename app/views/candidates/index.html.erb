@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Candidates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prefix</th>
+      <th>Office held</th>
+      <th>Office sought</th>
+      <th>Firstname</th>
+      <th>Mi</th>
+      <th>Lastname</th>
+      <th>Alias</th>
+      <th>Suffix</th>
+      <th>Addresschange</th>
+      <th>Address</th>
+      <th>Apptsuitenum</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Phone</th>
+      <th>Ext</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @candidates.each do |candidate| %>
+      <tr>
+        <td><%= candidate.prefix_id %></td>
+        <td><%= candidate.office_held_id %></td>
+        <td><%= candidate.office_sought_id %></td>
+        <td><%= candidate.firstname %></td>
+        <td><%= candidate.mi %></td>
+        <td><%= candidate.lastname %></td>
+        <td><%= candidate.alias %></td>
+        <td><%= candidate.suffix %></td>
+        <td><%= candidate.addresschange %></td>
+        <td><%= candidate.address %></td>
+        <td><%= candidate.apptsuitenum %></td>
+        <td><%= candidate.city %></td>
+        <td><%= candidate.state_id %></td>
+        <td><%= candidate.zipcode %></td>
+        <td><%= candidate.phone %></td>
+        <td><%= candidate.ext %></td>
+        <td><%= link_to 'Show', candidate %></td>
+        <td><%= link_to 'Edit', edit_candidate_path(candidate) %></td>
+        <td><%= link_to 'Destroy', candidate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Candidate', new_candidate_path %>

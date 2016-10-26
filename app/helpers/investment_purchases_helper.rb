@@ -1,0 +1,2 @@
+module InvestmentPurchasesHelper
+end

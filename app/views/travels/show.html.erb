@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @travel.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @travel.entity_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @travel.candidate_id %>
+</p>
+
+<p>
+  <strong>Travel schedule:</strong>
+  <%= @travel.travel_schedule_id %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @travel.purpose %>
+</p>
+
+<p>
+  <strong>Travelbegin:</strong>
+  <%= @travel.travelbegin %>
+</p>
+
+<p>
+  <strong>Travelend:</strong>
+  <%= @travel.travelend %>
+</p>
+
+<p>
+  <strong>Transportation:</strong>
+  <%= @travel.transportation %>
+</p>
+
+<p>
+  <strong>Departureloc:</strong>
+  <%= @travel.departureloc %>
+</p>
+
+<p>
+  <strong>Destinationloc:</strong>
+  <%= @travel.destinationloc %>
+</p>
+
+<%= link_to 'Edit', edit_travel_path(@travel) %> |
+<%= link_to 'Back', travels_path %>

@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Filers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Filer type</th>
+      <th>State</th>
+      <th>Firstname</th>
+      <th>Mi</th>
+      <th>Lastname</th>
+      <th>Committee</th>
+      <th>Address</th>
+      <th>Addresstwo</th>
+      <th>Suite</th>
+      <th>City</th>
+      <th>Zipcode</th>
+      <th>Phone</th>
+      <th>Ext</th>
+      <th>Email</th>
+      <th>Releasepasswordto</th>
+      <th>Emailreleasepassword</th>
+      <th>Receivedate</th>
+      <th>Active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @filers.each do |filer| %>
+      <tr>
+        <td><%= filer.filer_type_id %></td>
+        <td><%= filer.state_id %></td>
+        <td><%= filer.firstname %></td>
+        <td><%= filer.mi %></td>
+        <td><%= filer.lastname %></td>
+        <td><%= filer.committee %></td>
+        <td><%= filer.address %></td>
+        <td><%= filer.addresstwo %></td>
+        <td><%= filer.suite %></td>
+        <td><%= filer.city %></td>
+        <td><%= filer.zipcode %></td>
+        <td><%= filer.phone %></td>
+        <td><%= filer.ext %></td>
+        <td><%= filer.email %></td>
+        <td><%= filer.releasepasswordto %></td>
+        <td><%= filer.emailreleasepassword %></td>
+        <td><%= filer.receivedate %></td>
+        <td><%= filer.active %></td>
+        <td><%= link_to 'Show', filer %></td>
+        <td><%= link_to 'Edit', edit_filer_path(filer) %></td>
+        <td><%= link_to 'Destroy', filer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Filer', new_filer_path %>

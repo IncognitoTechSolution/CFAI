@@ -1,0 +1,2 @@
+module OfficeSoughtsHelper
+end

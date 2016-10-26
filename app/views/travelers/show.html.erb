@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trvael:</strong>
+  <%= @traveler.trvael_id %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @traveler.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @traveler.lastname %>
+</p>
+
+<%= link_to 'Edit', edit_traveler_path(@traveler) %> |
+<%= link_to 'Back', travelers_path %>

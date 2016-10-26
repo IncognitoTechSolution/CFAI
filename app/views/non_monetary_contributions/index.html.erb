@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Non Monetary Contributions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Travel</th>
+      <th>Candidate</th>
+      <th>Date</th>
+      <th>Outofstatepac</th>
+      <th>Pacid</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Nmctotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @non_monetary_contributions.each do |non_monetary_contribution| %>
+      <tr>
+        <td><%= non_monetary_contribution.report_id %></td>
+        <td><%= non_monetary_contribution.transaction_id %></td>
+        <td><%= non_monetary_contribution.entity_id %></td>
+        <td><%= non_monetary_contribution.travel_id %></td>
+        <td><%= non_monetary_contribution.candidate_id %></td>
+        <td><%= non_monetary_contribution.date %></td>
+        <td><%= non_monetary_contribution.outofstatepac %></td>
+        <td><%= non_monetary_contribution.pacid %></td>
+        <td><%= non_monetary_contribution.amount %></td>
+        <td><%= non_monetary_contribution.description %></td>
+        <td><%= non_monetary_contribution.nmctotal %></td>
+        <td><%= link_to 'Show', non_monetary_contribution %></td>
+        <td><%= link_to 'Edit', edit_non_monetary_contribution_path(non_monetary_contribution) %></td>
+        <td><%= link_to 'Destroy', non_monetary_contribution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Non monetary contribution', new_non_monetary_contribution_path %>

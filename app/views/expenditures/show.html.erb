@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @expenditure.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @expenditure.entity_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @expenditure.transaction_id %>
+</p>
+
+<p>
+  <strong>Payment method:</strong>
+  <%= @expenditure.payment_method_id %>
+</p>
+
+<p>
+  <strong>Travel:</strong>
+  <%= @expenditure.travel_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @expenditure.candidate_id %>
+</p>
+
+<p>
+  <strong>Expen category:</strong>
+  <%= @expenditure.expen_category_id %>
+</p>
+
+<p>
+  <strong>Expend type:</strong>
+  <%= @expenditure.expend_type_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @expenditure.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @expenditure.amount %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @expenditure.purpose %>
+</p>
+
+<p>
+  <strong>Expendituretotal:</strong>
+  <%= @expenditure.expendituretotal %>
+</p>
+
+<%= link_to 'Edit', edit_expenditure_path(@expenditure) %> |
+<%= link_to 'Back', expenditures_path %>

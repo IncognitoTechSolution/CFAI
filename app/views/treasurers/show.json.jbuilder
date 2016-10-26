@@ -1,0 +1,1 @@
+json.partial! "treasurers/treasurer", treasurer: @treasurer

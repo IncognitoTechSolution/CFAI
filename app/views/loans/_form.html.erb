@@ -1,0 +1,73 @@
+<%= form_for(@loan) do |f| %>
+  <% if @loan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loan.errors.count, "error") %> prohibited this loan from being saved:</h2>
+
+      <ul>
+      <% @loan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_id %><br>
+    <%= f.number_field :transaction_id %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_id %><br>
+    <%= f.number_field :entity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :candidate_id %><br>
+    <%= f.number_field :candidate_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :outofstatepac %><br>
+    <%= f.check_box :outofstatepac %>
+  </div>
+  <div class="field">
+    <%= f.label :pacid %><br>
+    <%= f.text_field :pacid %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :interestrate %><br>
+    <%= f.text_field :interestrate %>
+  </div>
+  <div class="field">
+    <%= f.label :maturitydate %><br>
+    <%= f.text_field :maturitydate %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :personalfund %><br>
+    <%= f.check_box :personalfund %>
+  </div>
+  <div class="field">
+    <%= f.label :amountguaranteed %><br>
+    <%= f.text_field :amountguaranteed %>
+  </div>
+  <div class="field">
+    <%= f.label :loantotal %><br>
+    <%= f.text_field :loantotal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

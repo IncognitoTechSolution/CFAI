@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Expend Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expend_types.each do |expend_type| %>
+      <tr>
+        <td><%= expend_type.type %></td>
+        <td><%= link_to 'Show', expend_type %></td>
+        <td><%= link_to 'Edit', edit_expend_type_path(expend_type) %></td>
+        <td><%= link_to 'Destroy', expend_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expend type', new_expend_type_path %>

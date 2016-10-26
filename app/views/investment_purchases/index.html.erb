@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Investment Purchases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Entity</th>
+      <th>Expend type</th>
+      <th>Transaction</th>
+      <th>Candidate</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Iptotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @investment_purchases.each do |investment_purchase| %>
+      <tr>
+        <td><%= investment_purchase.report_id %></td>
+        <td><%= investment_purchase.entity_id %></td>
+        <td><%= investment_purchase.expend_type_id %></td>
+        <td><%= investment_purchase.transaction_id %></td>
+        <td><%= investment_purchase.candidate_id %></td>
+        <td><%= investment_purchase.date %></td>
+        <td><%= investment_purchase.amount %></td>
+        <td><%= investment_purchase.description %></td>
+        <td><%= investment_purchase.iptotal %></td>
+        <td><%= link_to 'Show', investment_purchase %></td>
+        <td><%= link_to 'Edit', edit_investment_purchase_path(investment_purchase) %></td>
+        <td><%= link_to 'Destroy', investment_purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Investment purchase', new_investment_purchase_path %>

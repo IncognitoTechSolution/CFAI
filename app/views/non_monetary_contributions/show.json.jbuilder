@@ -1,0 +1,1 @@
+json.partial! "non_monetary_contributions/non_monetary_contribution", non_monetary_contribution: @non_monetary_contribution

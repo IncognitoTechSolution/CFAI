@@ -1,0 +1,49 @@
+<%= form_for(@non_political_expenditure) do |f| %>
+  <% if @non_political_expenditure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@non_political_expenditure.errors.count, "error") %> prohibited this non_political_expenditure from being saved:</h2>
+
+      <ul>
+      <% @non_political_expenditure.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_id %><br>
+    <%= f.number_field :entity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expenditure_category_id %><br>
+    <%= f.number_field :expenditure_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_id %><br>
+    <%= f.number_field :transaction_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :purpose %><br>
+    <%= f.text_area :purpose %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :npetotal %><br>
+    <%= f.text_field :npetotal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

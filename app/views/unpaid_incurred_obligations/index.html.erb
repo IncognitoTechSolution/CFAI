@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Unpaid Incurred Obligations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Entity</th>
+      <th>Transaction</th>
+      <th>Expenditure category</th>
+      <th>Candidate</th>
+      <th>Travel</th>
+      <th>Expend type</th>
+      <th>Description</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Uitotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unpaid_incurred_obligations.each do |unpaid_incurred_obligation| %>
+      <tr>
+        <td><%= unpaid_incurred_obligation.report_id %></td>
+        <td><%= unpaid_incurred_obligation.entity_id %></td>
+        <td><%= unpaid_incurred_obligation.transaction_id %></td>
+        <td><%= unpaid_incurred_obligation.expenditure_category_id %></td>
+        <td><%= unpaid_incurred_obligation.candidate_id %></td>
+        <td><%= unpaid_incurred_obligation.travel_id %></td>
+        <td><%= unpaid_incurred_obligation.expend_type_id %></td>
+        <td><%= unpaid_incurred_obligation.description %></td>
+        <td><%= unpaid_incurred_obligation.date %></td>
+        <td><%= unpaid_incurred_obligation.amount %></td>
+        <td><%= unpaid_incurred_obligation.uitotal %></td>
+        <td><%= link_to 'Show', unpaid_incurred_obligation %></td>
+        <td><%= link_to 'Edit', edit_unpaid_incurred_obligation_path(unpaid_incurred_obligation) %></td>
+        <td><%= link_to 'Destroy', unpaid_incurred_obligation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unpaid incurred obligation', new_unpaid_incurred_obligation_path %>
