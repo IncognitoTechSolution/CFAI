@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161026044440) do
+ActiveRecord::Schema.define(version: 20161026181511) do
 
   create_table "address_types", force: :cascade do |t|
     t.string   "type",       limit: 4000
@@ -317,8 +317,9 @@ ActiveRecord::Schema.define(version: 20161026044440) do
     t.string   "campaignyear",   limit: 4000
     t.boolean  "ontime"
     t.string   "signature",      limit: 4000
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+    t.string   "status",         limit: 4000, default: "started"
   end
 
   create_table "states", force: :cascade do |t|
